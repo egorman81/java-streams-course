@@ -12,6 +12,12 @@ public class PersonDTO {
     this.age = age;
   }
 
+  public PersonDTO(Person person) {
+    this.id = person.getId();
+    this.name = person.firstName;
+    this.age = person.getAge();
+  }
+
   public Integer getId() {
     return id;
   }
